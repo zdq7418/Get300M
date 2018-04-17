@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.zdq.get300m.MainActivity">
+
+
+    <LinearLayout
+        android:id="@+id/email_login_form"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="30px"
+            android:layout_height="wrap_content">
+
+            <AutoCompleteTextView
+                android:id="@+id/shoujihaoma"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="请输入手机号码"
+                android:inputType="phone"
+                android:maxLines="1"
+                android:singleLine="true" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/yzm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="请输入验证码"
+                android:inputType="text"
+                android:maxLines="1"
+                android:singleLine="true" />
+
+        </android.support.design.widget.TextInputLayout>
+
+<LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="150px">
+    <ImageView
+        android:id="@+id/yzmtp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_gravity="center_vertical" />
+    <TextView
+        android:text="点击验证码刷新"
+        android:textSize="35px"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>
+
+
+        <RadioGroup
+            android:id="@+id/yys"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RadioButton
+            android:id="@+id/dx"
+            android:layout_width="wrap_content"
+            android:text="中国电信"
+                android:checked="true"
+            android:layout_height="wrap_content" />
+            <RadioButton
+                android:id="@+id/yd"
+                android:layout_width="wrap_content"
+                android:text="中国移动"
+                android:layout_height="wrap_content" />
+            <RadioButton
+                android:id="@+id/lt"
+                android:layout_width="wrap_content"
+                android:text="中国联通"
+                android:layout_height="wrap_content" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/linqu"
+            style="?android:textAppearanceSmall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="领取"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/rizhi"
+            android:layout_width="match_parent"
+            android:layout_height="200px" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/zuozhe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+                android:layout_weight="1"
+            android:text="联系作者"
+            />
+            <Button
+                android:id="@+id/gengduo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="更多资源"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>
